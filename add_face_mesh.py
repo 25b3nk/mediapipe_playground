@@ -19,7 +19,7 @@ moustache_img = cv2.imread("moustache.png", cv2.IMREAD_UNCHANGED)
 def apply_filter(image, face_landmarks):
     image_width = image.shape[1]
     image_height = image.shape[0]
-    upper_lip_inner_corner = face_landmarks.landmark[78]
+    # upper_lip_inner_corner = face_landmarks.landmark[78]
     upper_lip_outer_corner = face_landmarks.landmark[14]
     nose_tip = face_landmarks.landmark[1]
     left_lip_tip = face_landmarks.landmark[23]
